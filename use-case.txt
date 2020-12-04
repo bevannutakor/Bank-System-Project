@@ -1,0 +1,8 @@
+ATM type application
+
+1. users will be stored in an array when opening new client account
+2. Login users, if user is not there, throw error
+3. The signup and login system will be based off of binary search tree
+4. After login user will be allowed to deposit, withdraw and check overall balance
+5.If user attempts to withdraw money and there is not enough in their overall balance throw error
+6.Give user the ability to close their account
