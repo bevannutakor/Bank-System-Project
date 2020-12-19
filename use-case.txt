@@ -5,3 +5,6 @@ ATM type application
 4. After login user will be allowed to deposit, withdraw and check overall balance
 5.If user attempts to withdraw money and there is not enough in their overall balance throw error
 6.Give user the ability to close their account
+
+Note:
+To match the usernames and pins together and have optimal code; instead of having names and pins in separate lists create a 2d list with both then each will correspond with each other

@@ -74,8 +74,6 @@ class BankAccount():
 
         self.users.append(new_name)
         userPins.append(new_pin)
-        print(self.users)
-        print(userPins)
 
 
     def login(self):
@@ -83,20 +81,10 @@ class BankAccount():
         login_input = input("What is your username: ")
         login_pin = input("What is your pin: ")
 
-        if login_input == self.users[0] and login_pin == userPins[0]:
-            self.userAccount()
-        elif login_input == self.users[1] and login_pin == userPins[1]:
-            self.userAccount()
-        elif login_input == self.users[2] and login_pin == userPins[2]:
-            self.userAccount()
-        elif login_input == self.users[3] and login_pin == userPins[3]:
-            self.userAccount()
-        elif login_input == self.users[4] and login_pin == userPins[4]:
+        if login_input in self.users and login_pin in userPins:
             self.userAccount()
         else:
-            return print("Error")
-
-
+            return print("Your name and pin are not in our database")
        
 
     def start(self):
